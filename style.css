@@ -46,7 +46,32 @@ a:hover {
     bottom: 5%;
 }
 
+.mobile {
+    display: none;
+}
 
+@media (max-width: 450px) {
+    #desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        padding: 7%;
+    }
+
+    h1 {
+        font-size: 3.875rem;
+    }
+
+    .footer {
+        bottom: 7%;
+    }
+
+    .links-continer {
+        gap: 6rem;
+    }
+}
 
 
 
