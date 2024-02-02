@@ -1,6 +1,6 @@
 window.onload = function () {
   fetch(
-    "https://sebastian1935.github.io/codeBySebastian/backend/public/schedule"
+    "https://sebastian1935.github.io/codeBySebastian/backend/public/viewSchedule"
   )
     .then((response) => response.json())
     .then((schedule) => {
