@@ -10,13 +10,16 @@ document
     });
 
     try {
-      const response = await fetch("http://localhost:5500/schedule", {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(scheduleData),
-      });
+      const response = await fetch(
+        "https://sebastian1935.github.io/codeBySebastian/backend/public/schedule",
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(scheduleData),
+        }
+      );
       if (response.ok) {
         showAlert("Horario guardado correctamente");
       } else {
