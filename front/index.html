@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de Trabajo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Horario de Trabajo</h1>
+    <div id="schedule"></div>
+
+    <form id="scheduleForm">
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Mañana/Noche/Descanso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="scheduleDay" id="lunes">Lunes</td>
+                    <td>
+                        <select name="Lunes" class="scheduleSelect">
+                            <option value="Mañana">Mañana</option>
+                            <option value="Noche">Noche</option>
+                            <option value="Descanso">Descanso</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="scheduleDay" id="martes">Martes</td>
+                    <td>
+                        <select name="Martes" class="scheduleSelect">
+                            <option value="Mañana">Mañana</option>
+                            <option value="Noche">Noche</option>
+                            <option value="Descanso">Descanso</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="scheduleDay" id="miercoles">Miércoles</td>
+                    <td>
+                        <select name="Miércoles" class="scheduleSelect">
+                            <option value="Mañana">Mañana</option>
+                            <option value="Noche">Noche</option>
+                            <option value="Descanso">Descanso</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="scheduleDay" id="jueves">Jueves</td>
+                    <td>
+                        <select name="Jueves" class="scheduleSelect">
+                            <option value="Mañana">Mañana</option>
+                            <option value="Noche">Noche</option>
+                            <option value="Descanso">Descanso</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="scheduleDay" id="viernes">Viernes</td>
+                    <td>
+                        <select name="Viernes" class="scheduleSelect">
+                            <option value="Mañana">Mañana</option>
+                            <option value="Noche">Noche</option>
+                            <option value="Descanso">Descanso</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="scheduleDay" id="sabado">Sábado</td>
+                    <td>
+                        <select name="Sábado" class="scheduleSelect">
+                            <option value="Mañana">Mañana</option>
+                            <option value="Noche">Noche</option>
+                            <option value="Descanso">Descanso</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="scheduleDay" id="domingo">Domingo</td>
+                    <td>
+                        <select name="Domingo" class="scheduleSelect">
+                            <option value="Mañana">Mañana</option>
+                            <option value="Noche">Noche</option>
+                            <option value="Descanso">Descanso</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="submit">Guardar Horario</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
