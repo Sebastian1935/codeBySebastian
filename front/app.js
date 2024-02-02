@@ -11,7 +11,7 @@ document
 
     try {
       const response = await fetch(
-        "https://sebastian1935.github.io/codeBySebastian/backend/public/schedule",
+        "https://sebastian1935.github.io/codeBySebastian/backend/schedule",
         {
           method: "PUT",
           headers: {
