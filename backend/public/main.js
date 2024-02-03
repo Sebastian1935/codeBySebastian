@@ -1,11 +1,9 @@
 window.onload = function () {
-  fetch("https://sebastian1935.github.io/codeBySebastian/schedule")
+  fetch("/schedule")
     .then((response) => response.json())
     .then((schedule) => {
       const scheduleTable = document.createElement("table");
       scheduleTable.classList.add("schedule-table");
-
-      // Encabezados de la tabla
 
       // Cuerpo de la tabla
       const tableBody = document.createElement("tbody");
@@ -17,7 +15,6 @@ window.onload = function () {
           cellKey.textContent = key;
           let scheduleValue = schedule[key];
 
-          // Agregar emoji dependiendo del valor
           switch (scheduleValue) {
             case "Noche":
               scheduleValue += " 🌜";
@@ -40,7 +37,6 @@ window.onload = function () {
       }
       scheduleTable.appendChild(tableBody);
 
-      // Agregar la tabla al DOM
       const scheduleDiv = document.getElementById("schedule");
       scheduleDiv.appendChild(scheduleTable);
     })
