@@ -10,7 +10,7 @@ document
     });
 
     try {
-      const response = await fetch("/codeBySebastian/backend/schedule", {
+      const response = await fetch("/backend/schedule", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
