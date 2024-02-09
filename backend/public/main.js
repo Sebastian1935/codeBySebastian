@@ -1,5 +1,5 @@
 window.onload = function () {
-  fetch("https://sebastian1935.github.io/codeBySebastian/schedule")
+  fetch("https://sebastian1935.github.io/codeBySebastian/backend/schedule")
     .then((response) => response.json())
     .then((schedule) => {
       const scheduleTable = document.createElement("table");
